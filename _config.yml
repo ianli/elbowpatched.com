@@ -1,2 +1,6 @@
 # Build settings
 markdown: kramdown
+
+# http://jekyllrb.com/docs/permalinks/#built-in-permalink-styles
+# permalink: none - /:categories/:title.html
+permalink: none
