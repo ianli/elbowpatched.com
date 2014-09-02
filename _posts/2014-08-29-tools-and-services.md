@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: posts
 title:  "What tools and services did you use to make your academic personal website?"
 category: posts
 ---
