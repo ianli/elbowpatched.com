@@ -30,7 +30,7 @@ I will be exploring these solutions with Elbowpatched.
 
 P.S. I expect that if I had asked this question to academics in less computing-intensive departments, 
 I would have received different answers. 
-If you're experience with your academic personal website is different from the answers I received above, 
+If you\'re experience with your academic personal website is different from the answers I received above, 
 please send me a message on [Twitter (@ianli)](https://twitter.com/ianli),
-I’d appreciate to know what tools/services you use.
+I\'d appreciate to know what tools/services you use.
 
