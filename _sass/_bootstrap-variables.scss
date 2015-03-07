@@ -1,0 +1,282 @@
+$bootstrap-sass-asset-helper: false !default;
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000;
+$gray-darker:            #222;
+$gray-dark:              #333;
+$gray:                   #888;
+$gray-light:             #ccc;
+$gray-lighter:           #ddd;
+
+$brand-primary:         #03a9f4;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #f1f1f1;
+//** Global text color on `<body>`.
+$text-color:            #000;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-size-base:          16px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // 20px
+$font-size-small:         ceil(($font-size-base * 0.75)) !default; // 12px
+
+$font-size-h1:            floor(($font-size-base * 4)) !default;  // 64px
+$font-size-h2:            floor(($font-size-base * 3)) !default;  // 48px
+$font-size-h3:            ceil(($font-size-base * 2)) !default;   // 32px
+$font-size-h4:            ceil(($font-size-base * 1.5)) !default; // 24px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.75)) !default; // 12px
+
+$line-height-base:        1.5; // 24/16
+$line-height-computed:    floor(($font-size-base * $line-height-base));
+
+$headings-font-family:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$headings-font-weight:    normal !default;
+
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:     12px !default;
+$padding-base-horizontal:   18px !default;
+
+$padding-large-vertical:    16px !default;
+$padding-large-horizontal:  24px !default;
+
+$padding-small-vertical:    8px !default;
+$padding-small-horizontal:  12px !default;
+
+$padding-xs-vertical:       4px !default;
+$padding-xs-horizontal:     6px !default;
+
+$line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
+$line-height-small:         1.5;
+
+$border-radius-base:        0 !default;
+$border-radius-large:       0 !default;
+$border-radius-small:       0 !default;
+
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-default-color:              #666;
+$btn-default-bg:                 lighten($btn-default-color, 55%);
+$btn-default-border:             lighten($btn-default-color, 30%);
+
+$btn-primary-color:              darken($brand-primary, 10%);
+$btn-primary-bg:                 lighten($btn-primary-color, 55%);
+$btn-primary-border:             lighten($btn-primary-color, 40%);
+
+$_btn-border-width:              3px;
+$_btn-border-width-lg:           4px;
+$_btn-border-width-sm:           2px;
+
+
+//== Forms
+//
+//##
+
+//** Text color for `<input>`s
+$input-color:                    $text-color;
+//** `<input>` border color
+$input-border:                   transparent;
+
+//** Border color for inputs on focus
+$input-border-focus:             #999 !default;
+
+//** Placeholder text color
+$input-color-placeholder:        $gray-light;
+
+//** Default `.form-control` height
+$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + ($_btn-border-width * 2));
+//** Large `.form-control` height
+$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + ($_btn-border-width-lg * 2));
+//** Small `.form-control` height
+$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + ($_btn-border-width-sm * 2));
+
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+$grid-gutter-width:         32px !default;
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Large screen / wide desktop
+$container-large-desktop:      (940px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+
+//== Navbar
+//
+//##
+
+$navbar-height:                    64px;
+
+$navbar-default-bg:                #f1f1f1;
+$navbar-default-border:            #f1f1f1;
+
+//== Navs
+//
+//##
+
+//== Pills
+// $nav-pills-border-radius:                   $border-radius-base !default;
+$nav-pills-active-link-hover-bg:            transparent;
+$nav-pills-active-link-hover-color:         #000;
+
+
+//== Pagination
+//
+//##
+
+
+//== Pager
+//
+//##
+
+
+//== Jumbotron
+//
+//##
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+
+//== Tooltips
+//
+//##
+
+
+//== Popovers
+//
+//##
+
+
+//== Labels
+//
+//##
+
+
+//== Modals
+//
+//##
+
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+
+//== Progress bars
+//
+//##
+
+
+//== List group
+//
+//##
+
+
+//== Panels
+//
+//##
+
+
+//== Thumbnails
+//
+//##
+
+
+//== Wells
+//
+//##
+
+
+//== Badges
+//
+//##
+
+
+//== Breadcrumbs
+//
+//##
+
+
+//== Carousel
+//
+//##
+
+
+//== Close
+//
+//##
+
+
+//== Code
+//
+//##
+
+
+//== Type
+//
+//##
+
+$text-muted:                  $gray;
+
+$hr-border:                   #ddd;
+

@@ -2,6 +2,9 @@
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
+// Override bootstrap/mixins/buttons
+@import "bootstrap-mixins-buttons";
+
 // Reset and dependencies
 @import "bootstrap/normalize";
 @import "bootstrap/print";

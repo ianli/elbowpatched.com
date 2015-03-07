@@ -3,4 +3,71 @@
 # http://markdotto.com/2014/09/25/sass-and-jekyll/
 ---
 
+@import "bootstrap-variables";
 @import "bootstrap";
+@import "bootstrap-overrides";
+
+// Font smoothing
+// http://www.icondeposit.com/blog:how-to-properly-smooth-font-using-css3
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+header {
+  padding:160px 20px 80px;
+  background-color:#03a9f4;
+  color:rgba(255,255,255,0.75);
+
+  h1 {
+    margin-top:16px;
+    margin-bottom:16px;
+    line-height:72px;
+    letter-spacing:-2px;
+    font-size:72px;
+    font-weight:bold;
+    color:#fff;
+  }
+
+  h2 {
+    margin-top:0;
+    margin-bottom:64px;
+    line-height:40px;
+    letter-spacing:-1px;
+    font-size:40px;
+    font-weight:300;
+    color:#fff;
+  }
+
+  a,
+  a:hover,
+  a:active {
+    font-weight:700;
+    color:#fff;
+    text-decoration:none;
+  }
+  a:hover,
+  a:active {
+    text-decoration:underline;
+  }
+}
+
+.section--padded {
+  padding:80px 20px;
+}
+
+.section--gray-dark {
+  background-color:#444;
+}
+
+.section--inverse {
+  color:#fff;
+
+  h2 {
+    line-height:40px;
+    letter-spacing:-1px;
+    font-size:40px;
+    font-weight:300;
+    color:#fff;
+  }
+}
