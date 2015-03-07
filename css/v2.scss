@@ -14,36 +14,42 @@ html, html a {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
-header {
-  padding:160px 20px 80px;
-  background-color:#03a9f4;
-  color:rgba(255,255,255,0.75);
+.section {
+  background-color:#fff;
 
   h1 {
-    margin-top:16px;
-    margin-bottom:16px;
     line-height:72px;
     letter-spacing:-2px;
     font-size:72px;
     font-weight:bold;
-    color:#fff;
   }
 
   h2 {
-    margin-top:0;
-    margin-bottom:64px;
     line-height:40px;
     letter-spacing:-1px;
     font-size:40px;
     font-weight:300;
-    color:#fff;
+  }
+
+  h3 {
+    line-height:32px;
+    font-size:32px;
+    font-weight:300;
+  }
+
+  h4 {
+    margin-top:0;
+    margin-bottom:12px;
+    line-height:24px;
+    font-size:24px;
+    font-weight:normal;
   }
 
   a,
   a:hover,
   a:active {
-    font-weight:700;
-    color:#fff;
+    // font-weight:700;
+    color:#03a9f4;
     text-decoration:none;
   }
   a:hover,
@@ -61,29 +67,35 @@ header {
 }
 
 .section--inverse {
-  color:#fff;
+  // color:#fff;
+  color:rgba(255,255,255,0.67);
+
+  h2,
+  h3,
+  h4 {
+    color:#fff;
+  }
+
+  a,
+  a:hover,
+  a:active {
+    color:#fff;
+  }
+}
+
+.section--header {
+  padding:160px 20px 80px;
+  background-color:#03a9f4;
+
+  h1 {
+    margin-top:16px;
+    margin-bottom:16px;
+    color:#fff;
+  }
 
   h2 {
-    line-height:40px;
-    letter-spacing:-1px;
-    font-size:40px;
-    font-weight:300;
-    color:#fff;
-  }
-
-  h3 {
-    line-height:32px;
-    font-size:32px;
-    font-weight:300;
-    color:#fff;
-  }
-
-  h4 {
     margin-top:0;
-    margin-bottom:12px;
-    line-height:24px;
-    font-size:24px;
-    font-weight:normal;
+    margin-bottom:64px;
     color:#fff;
   }
 }
