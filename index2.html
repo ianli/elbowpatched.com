@@ -26,8 +26,8 @@
 
   <!-- Header -->
   <header class="section
-                 section--header
                  section--inverse
+                 section--header
                  text-center">
 
     <img src="/img/logo.svg"
@@ -79,8 +79,8 @@
   <!-- Intro -->
   <section class="section 
                   section--padded
-                  section--inverse
-                  section--gray-dark">
+                  section--inverse"
+           style="background-color:#444;">
 
     <div class="container">
 
@@ -160,7 +160,42 @@
       </div>
 
     </div>
-    
+  
+  </section>
+
+  <!-- Latest post -->
+  <section class="section 
+                  section--padded">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12
+                    text-center">
+          <h2 style="margin:0">
+            Latest blog post
+          </h2>
+
+          <h2 style="margin-top:40px;
+                     font-weight:normal;">
+            {{ site.posts.first.title }}
+          </h2>
+
+          <div style="margin-top:12px;
+                      text-transform:uppercase;
+                      color:#999;">
+            {{ site.posts.first.date | date:"%B %d, %Y" }}
+          </div>
+        </div>
+
+        <div class="col-xs-12
+                    col-md-offset-3 col-md-6"
+             style="margin-top:40px;">
+          {{ site.posts.first.content }}
+        </div>
+      </div>
+
+    </div>
 
   </section>
 

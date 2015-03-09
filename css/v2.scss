@@ -14,8 +14,16 @@ html, html a {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
+body {
+  font-variant-ligatures: common-ligatures;
+}
+
 .section {
   background-color:#fff;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin:0;
+  }
 
   h1 {
     line-height:72px;
@@ -48,8 +56,6 @@ html, html a {
   a,
   a:hover,
   a:active {
-    // font-weight:700;
-    color:#03a9f4;
     text-decoration:none;
   }
   a:hover,
@@ -62,12 +68,8 @@ html, html a {
   padding:80px 20px;
 }
 
-.section--gray-dark {
-  background-color:#444;
-}
-
 .section--inverse {
-  // color:#fff;
+  background-color:#000;
   color:rgba(255,255,255,0.67);
 
   h2,
