@@ -39,40 +39,7 @@
       Make a beautiful academic website. Easily.
     </h2>
 
-    <form action="https://tinyletter.com/elbowpatched" 
-          method="post"
-          target="_blank">
-
-      <h4>
-        Coming soon!
-      </h4>
-
-      <p style="margin-top:24px;">
-        <input type="hidden" value="1" name="embed"/>
-
-        <input type="text"
-               name="email"
-               id="tlemail"
-               placeholder="Email address"
-               class="form-control"
-               style="display:inline-block;
-                      margin-right:4px;
-                      width:240px;
-                      vertical-align:middle;" />
-        
-        <input type="submit" 
-               value="Join invite list"
-               class="btn btn-header"
-               style="display:inline-block;" />
-      </p>
-
-      <p style="margin-top:32px;">
-        Follow 
-        <a href="https://twitter.com/ianli">@elbowpatched</a>
-        on Twitter.
-      </p>
-
-    </form>
+    {% include join2.html %}
 
   </header>
 
@@ -235,6 +202,37 @@
     </div>
 
   </section>
+
+  <!-- Footer -->
+  <footer class="section
+                 section--padded
+                 section--inverse
+                 section--footer
+                 text-center">
+
+    {% include join2.html %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12
+                    col-md-offset-2 col-md-8">
+
+          <hr>
+
+          <p>
+            <img src="/img/logo.svg"
+                 style="height:24px;">
+          </p>
+          
+          <p>
+            &copy; 2015 Ian Li
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
 
 </body>
 </html>
