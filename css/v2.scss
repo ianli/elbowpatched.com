@@ -46,8 +46,6 @@ body {
   }
 
   h4 {
-    margin-top:0;
-    margin-bottom:12px;
     line-height:24px;
     font-size:24px;
     font-weight:normal;
@@ -60,7 +58,9 @@ body {
   }
   a:hover,
   a:active {
-    text-decoration:underline;
+    color:#333;
+    background-color:#fd0;
+    // text-decoration:underline;
   }
 }
 
@@ -78,9 +78,7 @@ body {
     color:#fff;
   }
 
-  a,
-  a:hover,
-  a:active {
+  a {
     color:#fff;
   }
 }
@@ -99,5 +97,24 @@ body {
     margin-top:0;
     margin-bottom:64px;
     color:#fff;
+  }
+}
+
+.section--blog {
+  h2 {
+    a {
+      color:$text-color;
+    }
+  }
+
+  h4 {
+    a {
+      color:$text-color;
+    }
+  }
+
+  .section--blog__date {
+    text-transform:uppercase;
+    color:#999;
   }
 }

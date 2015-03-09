@@ -165,25 +165,27 @@
 
   <!-- Latest post -->
   <section class="section 
-                  section--padded">
+                  section--padded
+                  section--blog">
 
     <div class="container">
 
       <div class="row">
         <div class="col-xs-12
                     text-center">
-          <h2 style="margin:0">
+          <h2>
             Latest blog post
           </h2>
 
           <h2 style="margin-top:40px;
                      font-weight:normal;">
-            {{ site.posts.first.title }}
+            <a href="{{ site.posts.first.url | prepend: site.baseurl }}">
+              {{ site.posts.first.title }}
+            </a>
           </h2>
 
-          <div style="margin-top:12px;
-                      text-transform:uppercase;
-                      color:#999;">
+          <div class="section--blog__date"
+               style="margin-top:12px;">
             {{ site.posts.first.date | date:"%B %d, %Y" }}
           </div>
         </div>
@@ -195,6 +197,41 @@
         </div>
       </div>
 
+    </div>
+
+  </section>
+
+  <!-- More blog posts -->
+  <section class="section
+                  section--padded
+                  section--blog
+                  text-center"
+           style="background-color:#f1f1f1">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12
+                    col-md-offset-2 col-md-8">
+
+          <h2>
+            More blog posts
+          </h2>
+
+          {% for post in site.posts offset:1 %}
+            <h4 style="margin-top:32px;">
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                {{ post.title }}
+              </a>
+            </h4>
+            <div class="section--blog__date"
+                 style="margin-top:8px;">
+              {{ post.date | date:"%B %d, %Y" }}
+            </div>
+          {% endfor %}
+
+        </div>
+
+      </div>
     </div>
 
   </section>
