@@ -19,14 +19,6 @@ p.lead {
 .btn-sm { border-width:2px; }
 .btn-xs { border-width:1px; }
 
-.btn-header {
-  @include button-variant(
-    #fff,     // text
-    #03a9f4,  // background
-    #fff      // border
-  );
-}
-
 
 // Form control
 // -------------------------

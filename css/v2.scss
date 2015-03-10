@@ -18,6 +18,17 @@ body {
   font-variant-ligatures: common-ligatures;
 }
 
+.btn-header {
+  @include button-variant(
+    #fff,     // text
+    #03a9f4,  // background
+    #fff,     // border
+    #333,     // hover text
+    #fd0,     // hover bg
+    #fd0      // hover border
+  );
+}
+
 .section {
   background-color:#fff;
 
@@ -60,7 +71,6 @@ body {
   a:active {
     color:#333;
     background-color:#fd0;
-    // text-decoration:underline;
   }
 }
 
