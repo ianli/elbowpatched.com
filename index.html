@@ -1,67 +1,241 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ElbowPatched - Make a beautiful academic website. Easily.</title>
 
-  {% include join.html %}
+  <meta charset="UTF-8">
 
-  <div class="container">
-    <section class="row">
-      <div class="col-xs-12
-                  col-md-offset-3 col-md-6
-                  col-lg-offset-4 col-lg-4">
-        <p>
-          You're an academic.
-          You're busy conducting research, analyzing data, and publishing papers.
-          The last thing you want to do is spend a lot of time creating a website.
-        </p>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-        <p>
-          Elbowpatched is here to help!
-          I'm building this service to help you create your own beautiful academic personal website.
-          Here are some of the features of Elbowpatched that I'm working on:
-        </p>
+  <!-- Stylesheets -->
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link href="/css/v2.css" rel="stylesheet" type="text/css">
 
-        <ul>
-          <li>A web interface to add and edit your publications, research information, and news</li>
-          <li>Select from a collection of themes to customize and personalize your website.</li>
-          <li>Publish your website on Elbowpatched.</li>
-        </ul>
+  <!-- Javascript -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-        <p>
-          If you have questions, message me on Twitter:
-          <a href="http://twitter.com/elbowpatched">@elbowpatched</a>.
-        </p>
-      </div>
-    </section>
-  </div>
+  <!-- Header -->
+  <header class="section
+                 section--inverse
+                 section--header
+                 text-center">
 
-  <div class="container">
-    <section class="row">
-      <div class="col-xs-12
-                  col-md-offset-2 col-md-8">
-        <hr>
-      </div>
-    </section>
-  </div>
+    <img src="/img/logo.svg"
+         style="height:64px;">
 
-  <div class="container">
-    {% for post in site.posts %}
-      <section class="row">
-        <div class="col-xs-12
-                    col-md-offset-3 col-md-6">
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <h1>ElbowPatched</h1>
+
+    <h2>
+      Make a beautiful academic website. Easily.
+    </h2>
+
+    {% include join2.html %}
+
+  </header>
+
+  <!-- Intro -->
+  <section class="section 
+                  section--padded
+                  section--inverse"
+           style="background-color:#444;">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2 style="margin:0">
+            Academic life is hard. Your website shouldn’t be.
           </h2>
         </div>
+      </div>
+
+      <div class="row"
+           style="margin-top:32px;">
+        <div class="col-xs-12
+                    col-sm-offset-2 col-sm-8
+                    col-md-offset-3 col-md-6">
+          <p>
+            You're an academic. You're busy conducting research, analyzing data, and publishing paper.
+            The last thing you want to do is spend a lot of time creating a website.
+          </p>
+
+          <p>
+            Elbowpatched is here to help! I'm building this service to help you create your own beautiful academic website.
+            Here are some features of Elbowpatched that I'm working on:
+          </p>
+        </div>
+      </div>
+
+      <div class="row"
+           style="margin-top:32px;">
         
         <div class="col-xs-12
-                    col-md-offset-3 col-md-6">
-          {{ post.content | split:'<!--break-->' | first }}
-
-          {% if post.content contains '<!--break-->' %}
-              <a href="{{ post.url }}">read more</a>
-          {% endif %}
+                    col-md-4
+                    text-center">
+          <img src="/img/icons/ic_edit_24px.svg"
+               style="margin-bottom:12px;
+                      width:64px;
+                      height:64px;">
+          <h4>
+            Easy editing
+          </h4>
+          <p class="lead"
+             style="margin-top:8px;">
+            Edit your academic profile, publications, projects, and presentations.
+          </p>
         </div>
-      </section>
-    {% endfor %}
-  </div>
+
+        <div class="col-xs-12
+                    col-md-4
+                    text-center">
+          <img src="/img/icons/ic_collections_24px.svg"
+               style="margin-bottom:12px;
+                      width:64px;
+                      height:64px;">
+          <h4>
+            Beautiful themes
+          </h4>
+          <p class="lead"
+             style="margin-top:8px;">
+            Select from themes to customize and personalize your website.
+          </p>
+        </div>
+
+        <div class="col-xs-12
+                    col-md-4
+                    text-center">
+          <img src="/img/icons/ic_stars_24px.svg"
+               style="margin-bottom:12px;
+                      width:64px;
+                      height:64px;">
+          <h4>
+            Custom URLs
+          </h4>
+          <p class="lead"
+             style="margin-top:8px;">
+            Publish your site on a custom domain or under your university domain.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  
+  </section>
+
+  <!-- Latest post -->
+  <section class="section 
+                  section--padded
+                  section--blog">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12
+                    text-center">
+          <h2>
+            Latest blog post
+          </h2>
+
+          <h2 style="margin-top:40px;
+                     font-weight:normal;">
+            <a href="{{ site.posts.first.url | prepend: site.baseurl }}">
+              {{ site.posts.first.title }}
+            </a>
+          </h2>
+
+          <div class="section--blog__date"
+               style="margin-top:12px;">
+            {{ site.posts.first.date | date:"%B %d, %Y" }}
+          </div>
+        </div>
+
+        <div class="col-xs-12
+                    col-md-offset-3 col-md-6"
+             style="margin-top:40px;">
+          {{ site.posts.first.content }}
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- More blog posts -->
+  <section class="section
+                  section--padded
+                  section--blog
+                  text-center"
+           style="background-color:#f1f1f1">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12
+                    col-md-offset-2 col-md-8">
+
+          <h2>
+            More blog posts
+          </h2>
+
+          {% for post in site.posts offset:1 %}
+            <h4 style="margin-top:32px;">
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                {{ post.title }}
+              </a>
+            </h4>
+            <div class="section--blog__date"
+                 style="margin-top:8px;">
+              {{ post.date | date:"%B %d, %Y" }}
+            </div>
+          {% endfor %}
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="section
+                 section--padded
+                 section--inverse
+                 section--footer
+                 text-center">
+
+    {% include join2.html %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12
+                    col-md-offset-2 col-md-8">
+
+          <hr>
+
+          <p>
+            <img src="/img/logo.svg"
+                 style="height:24px;">
+          </p>
+          
+          <p>
+            &copy; 2015 Ian Li
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>
