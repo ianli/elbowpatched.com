@@ -1,6 +1,6 @@
 ---
 layout: posts
-title:  "Elbowpatched Boilerplate"
+title:  "ElbowPatched Boilerplate"
 category: posts
 ---
 
@@ -9,7 +9,7 @@ that many academics I know hand-coded their personal websites.
 I was surprised by this because creating a website takes a lot of time and academics are very busy people.
 
 There must be a way to reduce the amount of time it takes to make a personal website. 
-For this purpose, I created [Elbowpatched Boilerplate](https://github.com/ianli/elbowpatched-boilerplate),
+For this purpose, I created [ElbowPatched Boilerplate](https://github.com/ianli/elbowpatched-boilerplate),
 a template to make it easier to create an academic personal website.
 It is built using [Jekyll](http://jekyllrb.com/) 
 and has the following features that make it easier to create an academic personal website.
@@ -18,7 +18,7 @@ and has the following features that make it easier to create an academic persona
 * Use the provided templates or create your own to change the presentation of your content.
 * Publish your website on [GitHub Pages](https://pages.github.com/) for free.
 
-Elbowpatched project is a work-in-progress,
+ElbowPatched project is a work-in-progress,
 so it currently only has one layout that you can use: 
 [Albertine](https://github.com/ianli/elbowpatched-boilerplate/blob/gh-pages/_layouts/albertine.html).
 You can preview what the layout looks like [here](http://ianli.github.io/elbowpatched-boilerplate/).

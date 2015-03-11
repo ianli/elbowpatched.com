@@ -26,7 +26,7 @@ There must be a better way to quickly create personal academic websites
 and allow people to maintain control over the presentation of their content.
 Perhaps a [Wordpress.com](http://wordpress.com) specifically designed for academics, 
 or a template that academics could use to quickly publish a website.
-I will be exploring these solutions with Elbowpatched.
+I will be exploring these solutions with ElbowPatched.
 
 P.S. I expect that if I had asked this question to academics in less computing-intensive departments, 
 I would have received different answers. 
