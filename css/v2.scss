@@ -22,10 +22,7 @@ body {
   @include button-variant(
     #fff,     // text
     #03a9f4,  // background
-    #fff,     // border
-    #333,     // hover text
-    #fd0,     // hover bg
-    #fd0      // hover border
+    #fff      // border
   );
 }
 
