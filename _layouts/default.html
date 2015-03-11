@@ -3,53 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Elbowpatched</title>
+  <title>{{ page.title }}</title>
 
   <meta charset="UTF-8">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-  <style>
-    body {
-      margin:96px 0;
-      color:#555;
-      background-color:#fff;
-      font-size:16px;
-    }
-
-    p, ul {
-      margin-bottom:24px;
-      line-height:24px;
-    }
-
-    header h1 {
-      margin:8px 0 32px;
-      text-align:center;
-      font-size:48px;
-      color:#0e5584;
-    }
-    header h1 > span {
-      color:#44a9eb;
-    }
-    header p {
-      margin:0 0 32px;
-      text-align:center;
-    }
-    header p.lead {
-      margin:0 0 32px;
-      font-size:24px;
-    }
-
-    section {
-      margin:0 0 32px;
-    }
-    section h2 {
-      margin-bottom:24px;
-    }
-      
-  </style>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -58,42 +14,48 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+  <!-- Stylesheets -->
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link href="/css/v2.css" rel="stylesheet" type="text/css">
+
   <!-- Javascript -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-  <header class="container">
-    <div class="row">
-      <div class="col-xs-12
-                  col-md-offset-3 col-md-6">
-        <img src="/img/icon.svg"
-             style="display:block;margin:0 auto;width:48px;height:48px;">
-        <a href="/" style="text-decoration:none;">
-          <h1>Elbowpatch<span>ed</span></h1>
-        </a>
-
-        <p class="lead">
-          Your academic research needs a great website.
-          <!-- Create your academic personal website easily. -->
-        </p>
-      </div>
-    </div>
-  </header>
-
   {{ content }}
 
-  <div class="container">
-    <section class="row">
-      <div class="col-xs-8 
-                  col-md-offset-2 col-md-8">
-        <hr>
-      </div>
-    </section>
-  </div>
+  <!-- Footer -->
+  <footer class="section
+                 section--padded
+                 section--inverse
+                 section--footer
+                 text-center">
 
-  {% include join.html %}
+    {% include join.html %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12
+                    col-md-offset-2 col-md-8">
+
+          <hr>
+
+          <p>
+            <img src="/img/logo.svg"
+                 style="height:24px;">
+          </p>
+          
+          <p>
+            &copy; 2015 Ian Li
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
 
   <!-- StatCounter -->
   <script>
