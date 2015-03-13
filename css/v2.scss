@@ -25,14 +25,6 @@ a.link--no-hover {
   }
 }
 
-.btn-header {
-  @include button-variant(
-    #fff,     // text
-    #03a9f4,  // background
-    #fff      // border
-  );
-}
-
 .section {
   background-color:#fff;
 
@@ -98,9 +90,17 @@ a.link--no-hover {
 }
 
 .section--header {
-  padding:160px 20px 80px;
+  padding:160px 20px 64px;
   background-color:#03a9f4;
   color:#fff;
+
+  .btn-default {
+    @include button-variant(
+      #fff,     // text
+      #03a9f4,  // background
+      #fff      // border
+    );
+  }
 
   h1 {
     margin-top:16px;
@@ -125,7 +125,7 @@ a.link--no-hover {
 
   h2 {
     margin-top:0;
-    margin-bottom:64px;
+    // margin-bottom:64px;
     color:#fff;
 
     line-height:32px;
@@ -140,10 +140,25 @@ a.link--no-hover {
       font-size:40px;
     }
   }
+
+  hr {
+    display:none;
+
+    @media (min-width: $screen-md-min) {
+      display:block;
+      position:absolute;
+      margin:0;
+      top:20px;
+      left:0;
+      height:160px;
+      border-top:none;
+      border-left:1px solid rgba(255,255,255,0.3);
+    }
+  }
 }
 
 .section--pricing {
-  background-color:#01579b;
+  background-color:#444;
 
   h2.section--pricing__h2 {
     font-weight:normal;
@@ -155,13 +170,18 @@ a.link--no-hover {
     }
   }
 
-  .section--pricing__premium {
-    border-top:1px solid rgba(255,255,255,0.5);
-
+  hr {
+    margin:48px 0;
+    border-color:rgba(255,255,255,0.33);
 
     @media (min-width: $screen-md-min) {
+      position:absolute;
+      margin:0;
+      top:20px;
+      left:0;
+      height:240px;
       border-top:none;
-      border-left:1px solid rgba(255,255,255,0.5);
+      border-left:1px solid rgba(255,255,255,0.3);
     }
   }
 
@@ -180,7 +200,7 @@ a.link--no-hover {
   .btn-default {
     @include button-variant(
       #fff,     // text
-      #01579b,  // background
+      #444,     // background
       #fff      // border
     );
   }
@@ -188,6 +208,14 @@ a.link--no-hover {
 
 .section--footer {
   background-color:#03a9f4;
+
+  .btn-default {
+    @include button-variant(
+      #fff,     // text
+      #03a9f4,  // background
+      #fff      // border
+    );
+  }
 
   hr {
     margin-top:32px;

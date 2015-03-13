@@ -3,53 +3,41 @@ layout: default
 title: ElbowPatched - Make a beautiful academic website. Easily.
 ---
 <!-- Header -->
-<header class="section
-               section--inverse
-               section--header
-               text-center">
-
-  <img src="/img/logo.svg"
-       style="height:64px;">
-
-  <h1>ElbowPatched</h1>
-
-  <h2>
-    Make a beautiful academic website.
-  </h2>
-
-  {% include join.html %}
-
-</header>
-
-<!-- Intro -->
-<section class="section 
-                section--padded
-                section--inverse"
-         style="background-color:#444;">
+<section class="section
+                section--inverse
+                section--header">
 
   <div class="container">
 
     <div class="row">
-      <div class="col-xs-12 text-center">
-        <h2 style="margin:0">
-          Academic life is hard. Your website shouldn’t be.
+      <div class="col-xs-12
+                  text-center">
+        <img src="/img/logo.svg"
+             style="height:64px;">
+
+        <h1>ElbowPatched</h1>
+
+        <h2>
+          Make a beautiful academic website.
+          <!-- Academic life is hard. Your website shouldn’t be. -->
         </h2>
       </div>
     </div>
 
     <div class="row"
-         style="margin-top:32px;">
+         style="margin-top:48px;">
       <div class="col-xs-12
                   col-sm-offset-2 col-sm-8
                   col-md-offset-3 col-md-6">
         <p>
-          You're an academic. You're busy conducting research, analyzing data, and publishing paper.
-          The last thing you want to do is spend a lot of time creating a website.
+          You're an academic.
+          You're busy conducting research, analyzing data, publishing papers, and making presentations.
+          You have little time left to create a beautiful website.
         </p>
 
         <p>
-          ElbowPatched is here to help! I'm building this service to help you create your own beautiful academic website.
-          Here are some features of ElbowPatched that I'm working on:
+          ElbowPatched saves you time by giving you easy-to-use tools
+          to create a beautiful academic website.
         </p>
       </div>
     </div>
@@ -76,6 +64,9 @@ title: ElbowPatched - Make a beautiful academic website. Easily.
       <div class="col-xs-12
                   col-md-4
                   text-center">
+
+        <hr>
+
         <img src="/img/icons/ic_collections_24px.svg"
              style="margin-bottom:12px;
                     width:64px;
@@ -92,6 +83,9 @@ title: ElbowPatched - Make a beautiful academic website. Easily.
       <div class="col-xs-12
                   col-md-4
                   text-center">
+
+        <hr>
+        
         <img src="/img/icons/ic_stars_24px.svg"
              style="margin-bottom:12px;
                     width:64px;
@@ -129,7 +123,7 @@ title: ElbowPatched - Make a beautiful academic website. Easily.
     </div>
 
     <div class="row"
-         style="margin-top:32px;">
+         style="margin-top:48px;">
       <div class="col-xs-12
                   col-md-4">
         <h2 class="section--pricing__h2">
@@ -154,6 +148,9 @@ title: ElbowPatched - Make a beautiful academic website. Easily.
       <div class="col-xs-12
                   col-md-8
                   section--pricing__premium">
+
+        <hr>
+
         <h2 class="section--pricing__h2">
           Premium
           <small>Coming soon</small>
@@ -162,7 +159,7 @@ title: ElbowPatched - Make a beautiful academic website. Easily.
         <ul>
           <li>User interface to edit content</li>
           <li>Select from a collection of themes</li>
-          <li>Publish on a custom domain</li>
+          <li>Publish without hassle</li>
           <li>$7 / month</li>
         </ul>
 
@@ -208,7 +205,7 @@ title: ElbowPatched - Make a beautiful academic website. Easily.
       <div class="col-xs-12
                   text-center">
         <h2>
-          Latest blog post
+          Latest update
         </h2>
 
         <h2 style="margin-top:40px;
@@ -248,7 +245,7 @@ title: ElbowPatched - Make a beautiful academic website. Easily.
                   col-md-offset-2 col-md-8">
 
         <h2>
-          More blog posts
+          More updates
         </h2>
 
         {% for post in site.posts offset:1 %}
