@@ -100,6 +100,7 @@ a.link--no-hover {
 .section--header {
   padding:160px 20px 80px;
   background-color:#03a9f4;
+  color:#fff;
 
   h1 {
     margin-top:16px;
@@ -138,6 +139,50 @@ a.link--no-hover {
       line-height:40px;
       font-size:40px;
     }
+  }
+}
+
+.section--pricing {
+  background-color:#01579b;
+
+  h2.section--pricing__h2 {
+    font-weight:normal;
+    color:#fd0;
+
+    > small {
+      font-size:50%;
+      text-transform:uppercase;
+    }
+  }
+
+  .section--pricing__premium {
+    border-top:1px solid rgba(255,255,255,0.5);
+
+
+    @media (min-width: $screen-md-min) {
+      border-top:none;
+      border-left:1px solid rgba(255,255,255,0.5);
+    }
+  }
+
+  ul {
+    list-style:none;
+    margin:16px 0 24px;
+    padding:0;
+    font-size:20px;
+    font-weight:300;
+
+    >li {
+      margin-bottom:8px;
+    }
+  }
+
+  .btn-default {
+    @include button-variant(
+      #fff,     // text
+      #01579b,  // background
+      #fff      // border
+    );
   }
 }
 
