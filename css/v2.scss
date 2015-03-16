@@ -49,7 +49,7 @@ a.link--no-hover {
   h3 {
     line-height:32px;
     font-size:32px;
-    font-weight:300;
+    font-weight:normal;
   }
 
   h4 {
@@ -225,16 +225,14 @@ a.link--no-hover {
 }
 
 .section--blog {
-  h2 {
+  h2, h3, h4 {
     a {
       color:$text-color;
     }
   }
 
   h4 {
-    a {
-      color:$text-color;
-    }
+    margin:1em 0 0.75em;
   }
 
   .section--blog__date {
