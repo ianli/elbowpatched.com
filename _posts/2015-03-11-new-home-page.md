@@ -9,33 +9,39 @@ The logomark, logotype, color palette, and layout are all new.
 
 #### Logomark
 
-<img src="/img/posts/2015-03/logomark.png"
-     title="ElbowPatched logomark"
-     class="img-thumbnail
-            img-responsive">
+<a href="/img/posts/2015-03/logomark.png" target="_blank">
+  <img src="/img/posts/2015-03/logomark.png"
+       title="ElbowPatched logomark"
+       class="img-thumbnail
+              img-responsive">
+</a>
 
 The logomark is an owl composed of squares set at 45&deg;.
 
 #### Logotype
 
-<img src="/img/posts/2015-03/logotype.png"
-     title="ElbowPatched logotype"
-     class="img-thumbnail
-            img-responsive">
+<a href="/img/posts/2015-03/logotype.png" target="_blank">
+  <img src="/img/posts/2015-03/logotype.png"
+       title="ElbowPatched logotype"
+       class="img-thumbnail
+              img-responsive">
+</a>
 
 The logotype uses the open-source sans serif font [Lato](http://www.latofonts.com/lato-free-fonts/)
 designed by [Łukasz Dziedzic](http://www.latofonts.com/team/).
 
 #### Color palette
 
-<img src="/img/posts/2015-03/color-palette.png"
-     title="Elbowpatched color palette"
-     class="img-thumbnail
-            img-responsive">
+<a href="/img/posts/2015-03/color-palette.png" target="_blank">
+  <img src="/img/posts/2015-03/color-palette.png"
+       title="Elbowpatched color palette"
+       class="img-thumbnail
+              img-responsive">
+</a>
 
 #### Layout
 
-<a href="http://www.elbowpatched.com">
+<a href="http://www.elbowpatched.com" target="_blank">
   <img src="/img/posts/2015-03/home-page.png"
        title="Elbowpatched home page"
        class="img-thumbnail
